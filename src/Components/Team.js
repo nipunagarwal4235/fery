@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <>
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-16 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
             <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">
               OUR TEAM
@@ -21,7 +21,7 @@ const Team = () => {
             {team.map((member) => {
               return (
                 <>
-                  <div class="p-4 lg:w-1/2 md:w-1/2">
+                  <div class="p-4 lg:w-1/4 md:w-1/2">
                     <div class="h-full flex flex-col items-center text-center">
                       <img
                         alt="team"

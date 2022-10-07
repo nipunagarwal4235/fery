@@ -1,5 +1,7 @@
 import React from "react";
 
+import ContactWomen from "../assets/Illustrations/undraw_contact_us_re_4qqt.svg";
+
 const Contact = () => {
   return (
     <>
@@ -13,11 +15,7 @@ const Contact = () => {
               Vivamus in nisl metus? Phasellus.
             </div>
           </div>
-          <img
-            src="assets/svg/doodle.svg"
-            alt=""
-            className="p-6 h-52 md:h-64"
-          />
+          <img src={ContactWomen} alt="" className="p-6 h-52 md:h-64" />
         </div>
         <form
           novalidate=""

@@ -6,6 +6,7 @@ import Blogs from "./Components/Blogs";
 import Footer from "./Components/Footer";
 import Stats from "./Components/Stats";
 import Contact from "./Components/Contact";
+import WhyUs from "./Components/WhyUs";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavBar></NavBar>
       <Hero></Hero>
       <Team></Team>
+      <WhyUs></WhyUs>
       <Stats></Stats>
       <Testimonial></Testimonial>
       <Blogs></Blogs>

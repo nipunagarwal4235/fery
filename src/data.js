@@ -2,6 +2,11 @@
 import Ajay from "./assets/Team/Ajay.jpg";
 import Vindhya from "./assets/Team/Vindhya.jpeg";
 
+//import testimonial pictures
+import Manya from './assets/Testimonial/Manya.jpeg'
+import Shreya from './assets/Testimonial/Shreya.jpeg'
+import Gauri from './assets/Testimonial/Gauri.jpeg'
+
 export const team = [
   {
     name: "Ajay Kumar",
@@ -19,9 +24,22 @@ export const team = [
 
 export const testimonials = [
   {
-    name: "",
-    testimonial: "",
-    image: "",
+    name: "Manya Goel",
+    location: "Gurugram , India",
+    testimonial: "When I travel alone, I find it little discomfortable as drivers stare at me, they try to touch me even in the bus or to anywhere so I find it uncomfortable. I think a service like Fery will help me overcome this.",
+    image: Manya,
+  },
+  {
+    name: "Shreya",
+    location: "Gurugram , India",
+    testimonial: "While traveling alone is the insecurity from the driver. I have to be aware and awake full time. Fery will give me the confidence to travel alone peacefully.",
+    image: Shreya,
+  },
+  {
+    name: "Gauri",
+    location: "Gurugram , India",
+    testimonial: "While traveling there is sometimes we fear in dark times we can’t travel alone and we need some company. Also people judge on the basis of clothes we wear. I always wanted a women driver so that I wouldn't be judged constantly and travel carefree.",
+    image: Gauri,
   },
 ];
 
