@@ -6,6 +6,7 @@ import {
   TbBrandFacebook,
   TbBrandLinkedin,
   TbBrandYoutube,
+  TbBrandTwitter
 } from "react-icons/tb";
 
 const Footer = () => {
@@ -108,6 +109,12 @@ const Footer = () => {
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <TbBrandYoutube className="h-6 w-6"></TbBrandYoutube>
+              </a>
+              <a
+                href="/"
+                className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >
+                <TbBrandTwitter className="h-6 w-6"></TbBrandTwitter>
               </a>
             </div>
             <p className="mt-4 text-sm text-gray-500">

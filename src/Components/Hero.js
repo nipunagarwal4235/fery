@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/logo.png";
-import SuperWoman from "../assets/Illustrations/undraw_super_woman_dv-0-y.svg";
+import Woman from "../assets/Illustrations/Untitled.svg"
 
 const Hero = () => {
   return (
@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <img
-              src={SuperWoman}
+              src={Woman}
               alt="Super Woman"
               className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
             />

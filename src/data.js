@@ -1,6 +1,6 @@
 //import team images
 import Ajay from "./assets/Team/Ajay.jpg";
-import Vindhya from "./assets/Team/Vindhya.jpeg";
+import Vindhya from "./assets/Team/Ajay_Vindhya Fery.jpg";
 
 //import testimonial pictures
 import Manya from "./assets/Testimonial/Manya.jpeg";
