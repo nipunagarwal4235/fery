@@ -11,7 +11,7 @@ const Stats = () => {
     // "20+ Drivers",
     // "500+ Customers",
     // "216K+ Reach",
-    // "15K+ Engagement",
+    // "15K+ Engagement",background-image: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
   ];
 
   return (
@@ -22,7 +22,7 @@ const Stats = () => {
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full  sm:w-12 sm:h-12">
               <TbSteeringWheel className="w-8 h-8 text-dark-pink sm:w-10 sm:h-10"></TbSteeringWheel>
             </div>
-            <h6 className="text-4xl font-bold text-deep-purple-accent-400">
+            <h6 className="text-4xl font-bold text-">
               {stat[0]}+
             </h6>
             <p className="mb-2 font-bold text-md">Driver Leads</p>

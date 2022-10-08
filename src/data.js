@@ -3,9 +3,9 @@ import Ajay from "./assets/Team/Ajay.jpg";
 import Vindhya from "./assets/Team/Vindhya.jpeg";
 
 //import testimonial pictures
-import Manya from './assets/Testimonial/Manya.jpeg'
-import Shreya from './assets/Testimonial/Shreya.jpeg'
-import Gauri from './assets/Testimonial/Gauri.jpeg'
+import Manya from "./assets/Testimonial/Manya.jpeg";
+import Shreya from "./assets/Testimonial/Shreya.jpeg";
+import Gauri from "./assets/Testimonial/Gauri.jpeg";
 
 export const team = [
   {
@@ -13,12 +13,16 @@ export const team = [
     image: Ajay,
     position: "Founder & CEO",
     linkedin: "https://www.linkedin.com/in/ajay-10/",
+    description:
+      "Founder Ajay Kumar discovered the issue of a safe local mobility solution for females after observing many incidents of misbehaviour of drivers or safety issues of female travellers in each and every mode of transport because of insecurities, mindset and perception of people.",
   },
   {
     name: "Vindhya Mehrotra",
     image: Vindhya,
     position: "Co-Founder & CMO",
     linkedin: "https://www.linkedin.com/in/vindhyamehrotra/",
+    description:
+      "Fery is co-founded by Vindhya Mehrotra in the year 2021 with a motive of creating a safe mobility solution for women. Being an outsider in Delhi NCR, day-to day travelling has been a concern for her in terms of safety and affordability.Therefore, the idea of having a safe environment for women by women seemed to be galvanic to her which led to the emergence of Fery.",
   },
 ];
 
@@ -26,19 +30,22 @@ export const testimonials = [
   {
     name: "Manya Goel",
     location: "Gurugram , India",
-    testimonial: "When I travel alone, I find it little discomfortable as drivers stare at me, they try to touch me even in the bus or to anywhere so I find it uncomfortable. I think a service like Fery will help me overcome this.",
+    testimonial:
+      "When I travel alone, I find it little discomfortable as drivers stare at me, they try to touch me even in the bus or to anywhere so I find it uncomfortable. I think a service like Fery will help me overcome this.",
     image: Manya,
   },
   {
     name: "Shreya",
     location: "Gurugram , India",
-    testimonial: "While traveling alone is the insecurity from the driver. I have to be aware and awake full time. Fery will give me the confidence to travel alone peacefully.",
+    testimonial:
+      "While traveling alone is the insecurity from the driver. I have to be aware and awake full time. Fery will give me the confidence to travel alone peacefully.",
     image: Shreya,
   },
   {
     name: "Gauri",
     location: "Gurugram , India",
-    testimonial: "While traveling there is sometimes we fear in dark times we can’t travel alone and we need some company. Also people judge on the basis of clothes we wear. I always wanted a women driver so that I wouldn't be judged constantly and travel carefree.",
+    testimonial:
+      "While traveling there is sometimes we fear in dark times we can’t travel alone and we need some company. Also people judge on the basis of clothes we wear. I always wanted a women driver so that I wouldn't be judged constantly and travel carefree.",
     image: Gauri,
   },
 ];
@@ -209,13 +216,13 @@ export const blogs = [
 ];
 
 export const stats = [
-    {
-        StatOne:"20+ Drivers",
-        StatTwo:"500+ Customers",
-        StatThree:"216K+ Reach",
-        StatFour:"15K+ Engagement",
-    }
-]
+  {
+    StatOne: "20+ Drivers",
+    StatTwo: "500+ Customers",
+    StatThree: "216K+ Reach",
+    StatFour: "15K+ Engagement",
+  },
+];
 
 export const socials = [
   {

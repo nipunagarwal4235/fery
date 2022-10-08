@@ -34,7 +34,7 @@ const NavBar = () => {
                 Fery
               </span>
             </a>
-            <ul class="flex items-center hidden space-x-8 lg:flex">
+            <ul class="flex items-center space-x-8 lg:flex">
               {options.map((option) => {
                 return (
                   <>

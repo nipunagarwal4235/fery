@@ -12,7 +12,7 @@ const Contact = () => {
               Let's talk!
             </h2>
             <div className="text-gray-600">
-              Vivamus in nisl metus? Phasellus.
+              Let us know you better and serve better!
             </div>
           </div>
           <img src={ContactWomen} alt="" className="p-6 h-52 md:h-64" />
@@ -29,7 +29,7 @@ const Contact = () => {
               id="name"
               type="text"
               placeholder=""
-              className="w-full p-3 rounded bg-gray-100"
+              className="w-full p-3 rounded border-dark-pink bg-gray-100"
             />
           </div>
           <div>
@@ -54,7 +54,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-sky-600 text-gray-50"
+            className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-dark-pink text-[#fff]"
           >
             Send Message
           </button>
