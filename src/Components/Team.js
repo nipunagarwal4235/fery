@@ -2,14 +2,14 @@ import React from "react";
 import { team } from "../data";
 import { FiLinkedin } from "react-icons/fi";
 import { TbQuestionMark } from "react-icons/tb";
-import { GiChargedArrow, GiBinoculars, GiStairsGoal } from "react-icons/gi";
+import { GiChargedArrow, GiBinoculars, GiConqueror } from "react-icons/gi";
 
 const Team = () => {
   const aboutus = [
     {
       name: "Our Motto",
       logo: (
-        <GiStairsGoal className="w-16 h-16 text-[#fff] lg:w-20 lg:h-20"></GiStairsGoal>
+        <GiConqueror className="w-16 h-16 text-[#fff] lg:w-20 lg:h-20"></GiConqueror>
       ),
       description:
         "Sister partners available at every possible location of the city. Keeping the safety and security of our sister partners as our topmost priority as well as the travellers",
@@ -67,9 +67,9 @@ const Team = () => {
                   height="24"
                 />
               </svg>
-              <span className="relative"> About </span>
+              <span className="relative font-poppins"> About </span>
             </span>
-            Us
+            {" "}Us
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -131,7 +131,9 @@ const Team = () => {
                             <FiLinkedin>{member.linkedin}</FiLinkedin>
                           </a>
                         </span>
-                        <h6 className="text-sm text-gray-500">{member.description}</h6>
+                        <h6 className="text-sm text-gray-500">
+                          {member.description}
+                        </h6>
                       </div>
                     </div>
                   </div>

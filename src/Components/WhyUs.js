@@ -17,7 +17,7 @@ const WhyUs = () => {
 
   return (
     <>
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20 lg:pb-0">
+      <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20 lg:pb-0">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <h2 className="max-w-lg mb-6 font-poppins text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
@@ -43,8 +43,8 @@ const WhyUs = () => {
                   height="24"
                 />
               </svg>
-              <span className="relative"> About </span>
-            </span>
+              <span className="relative">Why</span>
+            </span>{" "}
             Us
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
@@ -53,11 +53,11 @@ const WhyUs = () => {
           </p>
         </div>
       </div>
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-24">
         <div className="grid gap-3 row-gap-3 lg:grid-cols-2">
           <img src={Modern} alt="" />
           <div className="grid gap-3 row-gap-3 lg:grid-cols-2">
-            <ul className="space-y-3">
+            <ul className="space-y-10">
               <li className="flex items-start">
                 <span className="mr-1">
                   <TbBolt className="w-5 h-5 mt-px text-dark-pink"></TbBolt>
@@ -76,14 +76,20 @@ const WhyUs = () => {
                 </span>
                 {points[2]}
               </li>
-            </ul>
-            <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="mr-1">
                   <TbBolt className="w-5 h-5 mt-px text-dark-pink"></TbBolt>
                 </span>
                 {points[3]}
               </li>
+              <li className="flex items-start">
+                <span className="mr-1">
+                  <TbBolt className="w-5 h-5 mt-px text-dark-pink"></TbBolt>
+                </span>
+                {points[7]}
+              </li>
+            </ul>
+            <ul className="space-y-10">
               <li className="flex items-start">
                 <span className="mr-1">
                   <TbBolt className="w-5 h-5 mt-px text-dark-pink"></TbBolt>
@@ -96,19 +102,11 @@ const WhyUs = () => {
                 </span>
                 {points[5]}
               </li>
-            </ul>
-            <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="mr-1">
                   <TbBolt className="w-5 h-5 mt-px text-dark-pink"></TbBolt>
                 </span>
                 {points[6]}
-              </li>
-              <li className="flex items-start">
-                <span className="mr-1">
-                  <TbBolt className="w-5 h-5 mt-px text-dark-pink"></TbBolt>
-                </span>
-                {points[7]}
               </li>
               <li className="flex items-start">
                 <span className="mr-1">
