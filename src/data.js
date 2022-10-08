@@ -22,7 +22,7 @@ export const team = [
     position: "Co-Founder & CMO",
     linkedin: "https://www.linkedin.com/in/vindhyamehrotra/",
     description:
-      "Fery is co-founded by Vindhya Mehrotra in the year 2021 with a motive of creating a safe mobility solution for women. Being an outsider in Delhi NCR, day-to day travelling has been a concern for her in terms of safety and affordability.Therefore, the idea of having a safe environment for women by women seemed to be galvanic to her which led to the emergence of Fery.",
+      "Fery is Co-founded by Vindhya Mehrotra. Being an outsider in Delhi NCR, day-to day travelling has been a concern for her in terms of safety and affordability.Therefore, the idea of having a safe environment for women by women seemed to be galvanic to her which led to the emergence of Fery.",
   },
 ];
 
