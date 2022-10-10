@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/Fery SVG.svg";
 
 import {
   TbBrandInstagram,
@@ -22,10 +22,7 @@ const Footer = () => {
               className="inline-flex items-center"
             >
               
-              <img src={Logo} className="w-8" alt="" />
-              <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                Fery Rides
-              </span>
+              <img src={Logo} className="w-16" alt="" />
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-gray-800">
@@ -65,7 +62,7 @@ const Footer = () => {
             <div className="flex">
               <p className="mr-1 text-gray-800">Address:</p>
               <a
-                href="https://www.google.com/maps"
+                href="https://www.google.com/maps/place/BML+Munjal+University+(BMU)/@28.2476758,76.8114382,17z/data=!3m1!4b1!4m5!3m4!1s0x390d478e1d59b7fb:0xb1787ccb5563c223!8m2!3d28.2476758!4d76.8136269"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Our address"
@@ -87,31 +84,36 @@ const Footer = () => {
             </span>
             <div className="flex items-center mt-1 space-x-3">
               <a
-                href="/"
+                href="https://www.instagram.com/feryrides/"
+                target="_blank"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <TbBrandInstagram className="h-6 w-6"></TbBrandInstagram>
               </a>
               <a
-                href="/"
+                href="https://www.linkedin.com/company/fery-rides/"
+                target="_blank"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <TbBrandLinkedin className="h-6 w-6"></TbBrandLinkedin>
               </a>
               <a
-                href="/"
+                href="https://www.facebook.com/feryrides/"
+                target="_blank"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <TbBrandFacebook className="h-6 w-6"></TbBrandFacebook>
               </a>
               <a
-                href="/"
+                href="https://www.youtube.com/channel/UCclfgV95wVYt6OWf6Dh_6Cg"
+                target="_blank"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <TbBrandYoutube className="h-6 w-6"></TbBrandYoutube>
               </a>
               <a
-                href="/"
+                href="https://twitter.com/FeryRides"
+                target="_blank"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <TbBrandTwitter className="h-6 w-6"></TbBrandTwitter>

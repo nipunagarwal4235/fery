@@ -41,39 +41,20 @@ const Team = () => {
 
   return (
     <>
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20 lg:pb-0">
+    
+      <div id="aboutus" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-16 lg:pb-0">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-          <h2 className="max-w-lg mb-6 font-poppins text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-6 font-poppins text-3xl font-bold leading-none tracking-tight text-dark-maroon sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
-              <svg
-                viewBox="0 0 52 24"
-                fill="currentColor"
-                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-              >
-                <defs>
-                  <pattern
-                    id="a0b40128-6963-4319-aeeb-471e92fa2d74"
-                    x="0"
-                    y="0"
-                    width=".135"
-                    height=".30"
-                  >
-                    <circle cx="1" cy="1" r=".7" />
-                  </pattern>
-                </defs>
-                <rect
-                  fill="url(#a0b40128-6963-4319-aeeb-471e92fa2d74)"
-                  width="52"
-                  height="24"
-                />
-              </svg>
               <span className="relative font-poppins"> About </span>
-            </span>
-            {" "}Us
+            </span>{" "}
+            Us
           </h2>
-          <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          <p className="text-base text-gray-700 md:text-md">
+            We seek to create more and more job opportunities for our sister
+            partners to empower women. We also provide our customers assured
+            safety and economically priced service, so that you can experience
+            an hassle-free ride even during the traffic hours.
           </p>
         </div>
       </div>
@@ -109,7 +90,14 @@ const Team = () => {
             );
           })}
         </div>
-        <div class="container px-5 py-16 mx-auto">
+        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 lg:mt-24">
+          <h2 className="max-w-lg mb-6 font-poppins text-3xl font-bold leading-none tracking-tight text-dark-maroon sm:text-4xl md:mx-auto">
+            <span className="relative inline-block">
+              <span className="relative font-poppins"> Meet Our Founders </span>
+            </span>
+          </h2>
+        </div>
+        <div class="container px-5 pb-16 mx-auto">
           <div class="flex flex-wrap -m-4">
             {team.map((member) => {
               return (
@@ -127,8 +115,12 @@ const Team = () => {
                         </h2>
                         <h3 class="text-gray-500 mb-3">{member.position}</h3>
                         <span class="inline-flex">
-                          <a class="text-gray-500">
-                            <FiLinkedin>{member.linkedin}</FiLinkedin>
+                          <a
+                            class="text-gray-500"
+                            href={member.linkedin}
+                            target="_blank"
+                          >
+                            <FiLinkedin></FiLinkedin>
                           </a>
                         </span>
                         <h6 className="text-sm text-gray-500">

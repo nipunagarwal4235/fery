@@ -1,21 +1,27 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.png";
+import { Link } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
+import Logo from "../assets/Fery SVG.svg";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const options = [
     {
+      name: "About Us",
+      section: "aboutus",
+    },
+    {
       name: "Why Us?",
-      link: "/",
+      section: "whyus",
+    },
+    {
+      name: "Blogs",
+      section: "blogs",
     },
     {
       name: "Contact Us",
-      link: "/",
-    },
-    {
-      name: "Blog",
-      link: "/",
+      section: "contactus",
     },
   ];
   return (
@@ -29,34 +35,43 @@ const NavBar = () => {
               title="Company"
               class="inline-flex items-center"
             >
-              <img className="w-10" src={Logo} alt="fery logo" />
-              <span class="ml-2 font-poppins text-xl font-bold tracking-wide text-gray-100 uppercase">
-                Fery
-              </span>
+              <img className="w-16" src={Logo} alt="fery logo" />
             </a>
-            <ul class="flex items-center space-x-8 lg:flex">
+            <ul class="items-center space-x-8 lg:flex hidden">
               {options.map((option) => {
                 return (
                   <>
                     <li>
-                      <a
+                      {/* <a
                         href={option.link}
                         aria-label="Our product"
                         title="Our product"
                         class="font-medium font-poppins tracking-wide text-gray-100 transition-colors duration-200 hover:text-light-pink"
                       >
                         {option.name}
-                      </a>
+                      </a> */}
+                      <Link
+                        class="font-medium font-poppins tracking-wide text-gray-100 transition-colors duration-200 hover:text-light-pink cursor-pointer"
+                        activeClass="active"
+                        to={option.section}
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        {option.name}
+                      </Link>
                     </li>
                   </>
                 );
               })}
               <li>
                 <a
-                  href="/"
+                  href="https://forms.gle/ExXAqb8oAVKDSf5H9"
+                  target="_blank"
                   class="inline-flex items-center justify-center h-12 px-6 font-medium font-poppins tracking-wide text-white transition duration-200 rounded shadow-md bg-light-pink hover:bg-dark-pink focus:shadow-outline focus:outline-none"
-                  aria-label="Sign up"
-                  title="Sign up"
+                  aria-label="Join Us"
+                  title="Join Us"
                 >
                   Join Us
                 </a>
