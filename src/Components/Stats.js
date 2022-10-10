@@ -7,7 +7,7 @@ import { TbClick } from "react-icons/tb";
 
 const Stats = () => {
   const stat = [
-    20, 500, 276, 15,
+    150, 500, 276, 15,
     // "20+ Drivers",
     // "500+ Customers",
     // "216K+ Reach",
@@ -29,7 +29,7 @@ const Stats = () => {
           </p>
         </div>
       </div>
-      <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-20">
+      <div className="px-4 pb-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-20">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="text-center">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full  sm:w-12 sm:h-12">

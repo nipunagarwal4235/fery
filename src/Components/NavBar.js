@@ -27,7 +27,7 @@ const NavBar = () => {
   return (
     <>
       <div class="bg-white">
-        <div class="sticky top-0 shadow-md px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="sticky top-0 shadow-md px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a
               href="/"
@@ -42,14 +42,6 @@ const NavBar = () => {
                 return (
                   <>
                     <li>
-                      {/* <a
-                        href={option.link}
-                        aria-label="Our product"
-                        title="Our product"
-                        class="font-medium font-poppins tracking-wide text-gray-100 transition-colors duration-200 hover:text-light-pink"
-                      >
-                        {option.name}
-                      </a> */}
                       <Link
                         class="font-medium font-poppins tracking-wide text-gray-100 transition-colors duration-200 hover:text-light-pink cursor-pointer"
                         activeClass="active"
@@ -102,7 +94,7 @@ const NavBar = () => {
               </button>
               {isMenuOpen && (
                 <div class="absolute top-0 left-0 w-full">
-                  <div class="p-5 bg-dark-pink border rounded shadow-sm">
+                  <div class="p-5 bg-light-pink border rounded shadow-sm">
                     <div class="flex items-center justify-between mb-4">
                       <div>
                         <a
@@ -111,23 +103,8 @@ const NavBar = () => {
                           title="Company"
                           class="inline-flex items-center"
                         >
-                          <svg
-                            class="w-8 text-deep-purple-accent-400"
-                            viewBox="0 0 24 24"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeMiterlimit="10"
-                            stroke="currentColor"
-                            fill="none"
-                          >
-                            <rect x="3" y="1" width="7" height="12" />
-                            <rect x="3" y="17" width="7" height="6" />
-                            <rect x="14" y="1" width="7" height="6" />
-                            <rect x="14" y="11" width="7" height="12" />
-                          </svg>
-                          <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                            Company
+                          <span class="ml-2 text-xl font-poppins font-bold tracking-wide text-gray-800 uppercase">
+                            Fery
                           </span>
                         </a>
                       </div>
@@ -149,56 +126,25 @@ const NavBar = () => {
                     </div>
                     <nav>
                       <ul class="space-y-4">
-                        <li>
-                          <a
-                            href="/"
-                            aria-label="Our product"
-                            title="Our product"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Product
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            aria-label="Our product"
-                            title="Our product"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Features
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            aria-label="Product pricing"
-                            title="Product pricing"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Pricing
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            aria-label="About us"
-                            title="About us"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            About us
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
-                            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                            aria-label="Sign up"
-                            title="Sign up"
-                          >
-                            Sign up
-                          </a>
-                        </li>
+                        {options.map((option) => {
+                          return (
+                            <>
+                              <li>
+                                <Link
+                                  class="font-medium tracking-wide text-gray-700 cursor-pointer"
+                                  activeClass="active"
+                                  to={option.section}
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-70}
+                                  duration={500}
+                                >
+                                  {option.name}
+                                </Link>
+                              </li>
+                            </>
+                          );
+                        })}
                       </ul>
                     </nav>
                   </div>

@@ -54,7 +54,7 @@ const Blogs = () => {
                       {category.name}
                     </h5>
 
-                    <p class="mt-2 hidden text-sm sm:block">
+                    <p class="mt-2 text-sm sm:block">
                       {category.description}
                     </p>
                   </div>
